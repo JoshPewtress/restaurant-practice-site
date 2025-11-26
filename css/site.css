@@ -1,12 +1,3 @@
-/*
-Header Font: Kreon (700)
-Text Font: Nunito Sans (300)
-H1 Font Size - 144px
-H2 Font Size - 72px
-Standard Font Size - 36px
-Header/Footer/Subtitle Font Size - 24px
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 html {
@@ -20,22 +11,72 @@ body {
     padding: 0;
 }
 
+Header, Footer {
+    font-size: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kreon', serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
 nav, footer {
     background-color: black;
 }
 
 nav {
     text-align: right;
-    padding: .2rem 0;
+    padding: .3rem 0;
 }
 
 nav a:last-child {
-    padding-right: 2rem;
+    padding-right: 4.5rem;
 }
 
 nav a:link, nav a:visited, nav a:hover, nav a:active {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    margin: 0 1rem;
+    margin: 0 1.5rem;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+}
+
+.hero-text p {
+    font-size: 1.4rem;
+    padding-right: 2.4rem;
 }
