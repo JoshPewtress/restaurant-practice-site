@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-size: 36px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 300;
-}
-
-body {
-    margin: 0;
-    padding: 0;
+    line-height: 1.5rem;
 }
 
 Header, Footer {
@@ -18,7 +20,6 @@ Header, Footer {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Kreon', serif;
     font-weight: 700;
-    margin: 0;
 }
 
 h1 {
@@ -35,7 +36,7 @@ nav, footer {
 
 nav {
     text-align: right;
-    padding: .3rem 0;
+    padding: .2rem 0;
 }
 
 nav a:last-child {
@@ -49,6 +50,11 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
     margin: 0 1.5rem;
 }
 
+footer {
+    color: white;
+    text-align: center;
+}
+
 .hero {
     position: relative;
     width: 100%;
@@ -57,7 +63,7 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 }
 
 .hero img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
@@ -74,9 +80,56 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 .hero-text h1 {
     text-transform: uppercase;
     letter-spacing: 2rem;
+    margin-bottom: 2rem;
 }
 
 .hero-text p {
     font-size: 1.4rem;
     padding-right: 2.4rem;
+}
+
+.destination {
+    padding: 1rem 0;
+}
+
+.destination p {
+    width: 70%;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+.content-group {
+    display: flow-root;
+    max-height: 800px;
+}
+
+.content-group img {
+    width: 50%;
+    max-height: 800px;
+}
+
+.content-group-text-right {
+    width: 50%;
+    float: right;
+    text-align: left;
+    padding: 2rem;
+}
+
+.content-group-text-left {
+    width: 50%;
+    float: left;
+    text-align: left;
+    padding: 2rem;
+}
+
+.content-group-header {
+    margin-bottom: 1rem;
+}
+
+.content-group-paragraph {
+    text-wrap: pretty;
+}
+
+.centered {
+    text-align: center;
 }
