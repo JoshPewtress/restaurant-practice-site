@@ -130,6 +130,20 @@ footer {
     text-wrap: pretty;
 }
 
+.menu-section h2 {
+    margin: 2rem 0 1rem 2rem;
+}
+
+.menu-section ul {
+    margin-left: 2rem;
+    list-style-type: none;
+}
+
+.menu-section li {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
 .centered {
     text-align: center;
 }
